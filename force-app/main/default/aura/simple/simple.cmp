@@ -1,0 +1,8 @@
+<!--quickAdd.cmp-->
+<aura:component controller="GiphyController" implements="force:lightningQuickAction,force:appHostable">
+
+  <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+  <aura:attribute name="response" type="GiphyResponse" /> Longitude :
+  <ui:outputText value="{!v.response.coord.lon}" />
+
+</aura:component>
